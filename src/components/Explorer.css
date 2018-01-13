@@ -1,0 +1,24 @@
+.mainContent {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.centerArea {
+    width: 65%;
+    float: left;
+}
+
+.item {
+    margin: 15px;
+}
+
+.rightPanel {
+    position: absolute;
+    right: 0;
+    width: 30%;
+    margin: 15px;
+}
+
+.clear {
+    clear: both;
+}
