@@ -8,16 +8,12 @@ const items = {
     ['@teams']: {
         name: 'Teams'
     },
-
     ['@team-alfa']: {
         members: ['@marie', '@john']
     },
     ['@team-beta']: {
         members: ['@alex']
     },
-    
-    ['@managers']: {},
-    ['@developers']: {},
     ['@people']: {
         name: 'People'
     },
@@ -37,7 +33,7 @@ const items = {
 const descendants = {
     ['@root']: ['@my-org'],
     ['@my-org']: ['@people', '@teams'],
-    ['@teams']: ['@developers', '@managers'],
+    ['@teams']: ['@team-alfa', '@team-beta'],
     ['@people']: ['@marie', '@john', '@alex'],    
 }
 
