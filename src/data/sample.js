@@ -43,7 +43,6 @@ const descendants = {
 
 const resolveItems = () => {
   Object.entries(descendants).forEach(([key, list])=>{
-      console.log(key, descendants[key])
       descendants[key] = descendants[key].map(itemKey => items[itemKey])
   })
 }
