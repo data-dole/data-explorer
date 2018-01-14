@@ -1,4 +1,4 @@
-const items = {
+export const items = {
     ['@root']: {
         name: 'Root'
     },
@@ -30,7 +30,7 @@ const items = {
     },
 }
 
-const descendants = {
+export const descendants = {
     ['@root']: ['@my-org'],
     ['@my-org']: ['@people', '@teams'],
     ['@teams']: ['@team-alfa', '@team-beta'],
@@ -44,5 +44,3 @@ const resolveItems = () => {
 }
 
 resolveItems()
-
-export default { items: items, descendants: descendants }

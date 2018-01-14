@@ -1,13 +1,7 @@
-import data from './sample'
+import { descendants, items } from './sample'
 import { concat, flatten, uniq } from 'lodash'
 
-describe('sample data', ()=>{
-  it('has a required shape', ()=>{
-    const requiredShape = {descendants: expect.any(Object), items: expect.any(Object)}
-
-    expect(data).toEqual(expect.objectContaining(requiredShape))
-  })
-})
+const data = { descendants, items }
 
 describe('descendants', ()=>{
   it('maps items', ()=>{
