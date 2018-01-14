@@ -17,6 +17,7 @@ const items = {
     },
     
     ['@managers']: {},
+    ['@developers']: {},
     ['@people']: {
         name: 'People'
     },
@@ -40,6 +41,13 @@ const descendants = {
     ['@people']: ['@marie', '@john', '@alex'],    
 }
 
-// TODO process references
+const resolveItems = () => {
+  Object.entries(descendants).forEach(([key, list])=>{
+      console.log(key, descendants[key])
+      descendants[key] = descendants[key].map(itemKey => items[itemKey])
+  })
+}
+
+resolveItems()
 
 export default { items: items, descendants: descendants }
