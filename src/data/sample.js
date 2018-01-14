@@ -41,6 +41,7 @@ const resolveItems = () => {
   Object.entries(descendants).forEach(([key, list])=>{
       descendants[key] = descendants[key].map(itemKey => items[itemKey])
   })
+  // TODO resolve references
 }
 
 resolveItems()
